@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm <a href="https://github.com/ChikuBoy">Chiku</a> 👋</h1>
+<h1 align="center">Hi there, I'm <a href="https://github.com/nvrunx">Chiku</a> 👋</h1>
 
 <p align="center">
   <a href="https://github.com/ChikuBoy"><img src="https://img.shields.io/github/followers/ChikuBoy?label=Follow&style=social"></a>
