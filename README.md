@@ -62,8 +62,8 @@
 ### 📬 Let’s Connect
 
 <p align="center">
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-Drop%20a%20Message-blue?logo=gmail" /></a>
-  <a href="https://github.com/ChikuBoy"><img src="https://img.shields.io/badge/GitHub-ChikuBoy-181717?logo=github" /></a>
+  <a href="mailto:nvrunxbdueub@gmail.com"><img src="https://img.shields.io/badge/Email-Drop%20a%20Message-blue?logo=gmail" /></a>
+  <a href="https://github.com/nvrunx"><img src="https://img.shields.io/badge/GitHub-ChikuBoy-181717?logo=github" /></a>
 </p>
 
 ---
