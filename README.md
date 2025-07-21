@@ -1,72 +1,61 @@
-<h1 align="center">Hi there, I'm <a href="https://github.com/nvrunx">Chiku</a> 👋</h1>
+<!-- Profile README for https://github.com/chikuboy -->
+
+<div align="center">
+  
+  <img src="https://user-images.githubusercontent.com/10498744/210012254-234538ff-d198-48aa-8964-37e6fd45d227.gif" width="900"/>
+
+  <h1 align="center">
+    <span style="color: #00ffd5; font-weight: bold; text-shadow: 0 0 10px #00ffd5;">
+      chiku boy
+    </span>
+  </h1>
+
+  <h3 align="center">
+    <code><strong><i>"Crafting dreams into code, with fire in my soul 💻✨"</i></strong></code>
+  </h3>
+
+</div>
+
+---
 
 <p align="center">
-  <a href="https://github.com/ChikuBoy"><img src="https://img.shields.io/github/followers/ChikuBoy?label=Follow&style=social"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Discord-ChikuBoy%230001-7289DA?logo=discord"></a>
-  <a href="#"><img src="https://img.shields.io/twitter/follow/ChikuBoy?style=social" /></a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=00FFD5¢er=true&vCenter=true&width=500&lines=⚡+AI+Engineer+with+Creative+Fire;🎮+Game+Dev+by+Passion;📱+Mobile+App+Artist;💡+Automation+Craftsman" />
 </p>
 
 ---
 
-### 🛠️ Languages and Tools:
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kotlin-0095D5?style=flat&logo=kotlin&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSharp-239120?style=flat&logo=c-sharp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FFmpeg-007808?style=flat&logo=ffmpeg&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Unity-000000?style=flat&logo=unity&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vulkan-AC162C?style=flat&logo=vulkan&logoColor=white"/>
-</p>
-
-> _NOTE: Top languages are GitHub metrics based on public repo code. Not an actual skill rating._
-
----
-
-### 📊 GitHub Stats
+## 🚀 My Stack
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ChikuBoy&show_icons=true&theme=radical&border_radius=10&count_private=true" width="48%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChikuBoy&layout=compact&theme=radical&border_radius=10" width="48%"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Source+Code+Pro&size=18&pause=1000&color=00FF7F¢er=true&vCenter=true&width=600&height=120&lines=%3E+booting+systems...;%3E+loading+skills...;%3E+LANGUAGES%3A+Python,+Kotlin,+C%23,+JavaScript;%3E+FRAMEWORKS%3A+Android+Studio,+Unity,+Flask,+Vulkan;%3E+AI+%26+TOOLS%3A+FFmpeg,+PyTorch,+TensorFlow;%3E+...load+complete." alt="Hacker-style animated stack" />
 </p>
 
 ---
 
-### 📈 Contribution Streak
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/pacman.svg" width="100%"/>
+</div>
+
+---
+
+## 🔗 Connect with me
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=ChikuBoy&theme=radical&border_radius=10"/>
+  <a href="https://x.com/goluKumar613994" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="goluKumar613994" height="30" width="40" /></a>
+  <a href="mailto:nvrunxbdueub@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="nvrunxbdueub@gmail.com" height="30" width="40" /></a>
+  <a href="https://www.youtube.com/@MSP_Explained" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@MSP_Explained" height="30" width="40" /></a>
 </p>
 
 ---
 
-### 📦 Featured Projects
+## 🎯 Let’s Build the Future
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ChikuBoy/Jarvis-AI">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=ChikuBoy&repo=Jarvis-AI&theme=radical" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/ChikuBoy/Pishot">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=ChikuBoy&repo=Pishot&theme=radical" />
-      </a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+✨ *Fueled by curiosity. Powered by code. Focused on impact.*
+
+⭐ Star this profile to stay inspired!
+
+</div>
 
 ---
-
-### 📬 Let’s Connect
-
-<p align="center">
-  <a href="mailto:nvrunxbdueub@gmail.com"><img src="https://img.shields.io/badge/Email-Drop%20a%20Message-blue?logo=gmail" /></a>
-  <a href="https://github.com/nvrunx"><img src="https://img.shields.io/badge/GitHub-ChikuBoy-181717?logo=github" /></a>
-</p>
-
----
-
-⭐ *Star this repo to show some love!*  
-🧠 *Keep learning. Keep building. Keep dreaming.*
