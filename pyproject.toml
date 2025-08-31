@@ -70,6 +70,10 @@ all = [
     "nvrunx[cli,examples,aws]",
 ]
 
+[project.scripts]
+nvrunx = "browser_use.cli:main"
+browser-use = "browser_use.cli:main"
+
 [project.urls]
 Repository = "https://github.com/nvrunx/nvrunx"
 
