@@ -13,6 +13,7 @@ except ImportError:
 from browser_use import Agent, ChatOpenAI
 from browser_use.config import CONFIG
 from browser_use.telemetry import ProductTelemetry, CLITelemetryEvent
+from browser_use.utils import get_browser_use_version
 
 
 @click.command()
