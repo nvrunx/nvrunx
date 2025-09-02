@@ -19,22 +19,40 @@ try:
 	from rich.progress import Progress, SpinnerColumn, TextColumn
 	from rich.syntax import Syntax
 	from rich.json import JSON
+	TEXTUAL_AVAILABLE = True
 except ImportError:
 	# Fallback classes for when textual is not installed
-	class App: pass
+	TEXTUAL_AVAILABLE = False
+	class App: 
+		def __init__(self, **kwargs): pass
 	class ComposeResult: pass
 	class Container: pass
 	class Horizontal: pass
 	class Vertical: pass
-	class Button: pass
+	class Button: 
+		class Pressed:
+			def __init__(self): self.button = None
 	class Footer: pass 
 	class Header: pass
 	class Input: pass
 	class Log: pass
 	class RichLog: pass
-	class Select: pass
+	class Select: 
+		class Changed:
+			def __init__(self): 
+				self.select = None
+				self.value = None
 	class Static: pass
-	class TextArea: pass
+	class TextArea: 
+		class Changed:
+			def __init__(self): self.text_area = None
+	class Binding: pass
+	def reactive(default): 
+		return default
+	class Console:
+		def __init__(self): pass
+	class Text: pass
+	class Panel: pass
 
 from browser_use import Agent, ChatOpenAI, ChatAnthropic, ChatGoogle, ChatGroq, ChatOllama
 from browser_use.config import CONFIG
@@ -43,85 +61,90 @@ from browser_use.config import CONFIG
 class NvrunxTUI(App):
 	"""Textual User Interface for nvrunx."""
 	
-	CSS = """
-	.container {
-		layout: vertical;
-		height: 100%;
-	}
-	
-	.header {
-		height: 3;
-		background: $primary;
-	}
-	
-	.main {
-		layout: horizontal;
-		height: 1fr;
-	}
-	
-	.sidebar {
-		width: 30%;
-		background: $surface;
-		padding: 1;
-	}
-	
-	.content {
-		width: 70%;
-		padding: 1;
-	}
-	
-	.chat-log {
-		height: 1fr;
-		border: solid $accent;
-		margin-bottom: 1;
-	}
-	
-	.input-area {
-		height: 4;
-		border: solid $primary;
-	}
-	
-	.status {
-		height: 3;
-		background: $surface-lighten-1;
-		padding: 1;
-	}
-	
-	.model-select {
-		margin-bottom: 1;
-	}
-	
-	.action-buttons {
-		layout: horizontal;
-		height: 3;
-		margin-top: 1;
-	}
-	
-	Button {
-		margin-right: 1;
-	}
-	
-	Input {
-		width: 1fr;
-	}
-	"""
-	
-	BINDINGS = [
-		Binding("ctrl+c", "quit", "Quit"),
-		Binding("ctrl+l", "clear_log", "Clear Log"),
-		Binding("ctrl+s", "save_session", "Save Session"),
-		Binding("enter", "send_message", "Send", key_display="Enter"),
-		Binding("escape", "focus_input", "Focus Input"),
-	]
-	
-	current_model = reactive("gpt-4o-mini")
-	is_working = reactive(False)
-	
 	def __init__(self, **kwargs: Any):
+		if not TEXTUAL_AVAILABLE:
+			raise ImportError("Textual library not available. Install with: pip install 'nvrunx[cli]'")
 		super().__init__(**kwargs)
 		self.console = Console()
 		self.agent: Optional[Agent] = None
 		self.session_history: list[str] = []
+		
+		# Set attributes that would normally be set by class definition
+		self.current_model = "gpt-4o-mini"
+		self.is_working = False
+		
+		# Set CSS and bindings if textual is available
+		if TEXTUAL_AVAILABLE:
+			self.CSS = """
+			.container {
+				layout: vertical;
+				height: 100%;
+			}
+			
+			.header {
+				height: 3;
+				background: $primary;
+			}
+			
+			.main {
+				layout: horizontal;
+				height: 1fr;
+			}
+			
+			.sidebar {
+				width: 30%;
+				background: $surface;
+				padding: 1;
+			}
+			
+			.content {
+				width: 70%;
+				padding: 1;
+			}
+			
+			.chat-log {
+				height: 1fr;
+				border: solid $accent;
+				margin-bottom: 1;
+			}
+			
+			.input-area {
+				height: 4;
+				border: solid $primary;
+			}
+			
+			.status {
+				height: 3;
+				background: $surface-lighten-1;
+				padding: 1;
+			}
+			
+			.model-select {
+				margin-bottom: 1;
+			}
+			
+			.action-buttons {
+				layout: horizontal;
+				height: 3;
+				margin-top: 1;
+			}
+			
+			Button {
+				margin-right: 1;
+			}
+			
+			Input {
+				width: 1fr;
+			}
+			"""
+			
+			self.BINDINGS = [
+				Binding("ctrl+c", "quit", "Quit"),
+				Binding("ctrl+l", "clear_log", "Clear Log"),
+				Binding("ctrl+s", "save_session", "Save Session"),
+				Binding("enter", "send_message", "Send", key_display="Enter"),
+				Binding("escape", "focus_input", "Focus Input"),
+			]
 	
 	def compose(self) -> ComposeResult:
 		"""Compose the UI layout."""

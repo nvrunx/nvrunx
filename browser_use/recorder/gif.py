@@ -11,8 +11,10 @@ from datetime import datetime
 
 try:
 	from PIL import Image
+	PIL_Image = Image.Image
 except ImportError:
 	Image = None
+	PIL_Image = Any  # Fallback for type hints
 
 try:
 	import imageio
@@ -253,7 +255,7 @@ class GifRecorder:
 			self.logger.error(f"Failed to create GIF: {e}")
 			return None
 	
-	def _add_action_annotation(self, img: Image.Image, action: str) -> Image.Image:
+	def _add_action_annotation(self, img: PIL_Image, action: str) -> PIL_Image:
 		"""Add action annotation to image."""
 		try:
 			from PIL import ImageDraw, ImageFont
