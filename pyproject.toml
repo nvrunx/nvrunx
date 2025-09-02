@@ -52,6 +52,14 @@ cli = [
 aws = [
     "boto3>=1.38.45"
 ]
+browser = [
+    "playwright>=1.40.0",
+    "beautifulsoup4>=4.12.0",
+]
+gif = [
+    "pillow>=10.0.0",
+    "imageio[ffmpeg]>=2.30.0",
+]
 examples = [
     "botocore>=1.37.23",
     "imgcat>=0.6.0",
@@ -67,7 +75,7 @@ eval = [
     "browserbase==1.4.0",
 ]
 all = [
-    "nvrunx[cli,examples,aws]",
+    "nvrunx[cli,examples,aws,browser,gif]",
 ]
 
 [project.scripts]
